@@ -16,7 +16,7 @@ import EventAssistant from '../images/Neha.jpg'
 
 
 const members = ["Itisha Singh","Aaditya Neil Sinha","Manali Choudhary","Laveeshka Devi Mahadea","Thomas Birkenes","Jashandeep Singh","Kartik Pathak","Shreya Khosla","Neha Nayeem","Keovechchta Net","Ranginberry","Pragyandeep Sahoo","Ranveer Singh"];
-const titles = ["President","Vice-President","Secretary","Treasurer" ,"Sponsorship Officer","Sponsorship Associate","Sponsorship Associate","Events Officer","Events Associate","Social Media Associate","Graphics Designer","Senior Advisor","Executive Advisor"];
+const titles = ["President","Vice-President","Secretary","Treasurer" ,"Sponsorship Officer","Sponsorship Associate","Sponsorship Associate","Events Officer","Events Associate","Social Media","Graphics Designer","Senior Advisor","Executive Advisor"];
 const memPics = [pres,vicepres,Secretary,Treasurer,SponOff,eightbitlogo,SponAss2,eightbitlogo,EventAssistant,eightbitlogo,Rang,Praggy,Ranveer]
 
 function listElement (item) {

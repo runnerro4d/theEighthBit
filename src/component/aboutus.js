@@ -38,29 +38,17 @@ function memberList(mem){
                 {listElement(mem[4])}
                 {listElement(mem[5])}
                 {listElement(mem[6])}
-                
-            </div>
-            <div className="h1" style={{'textAlign':'center','marginTop':'1.5%'}}>Sponsorship</div>
-            <div className= "card-deck  mt-2 justify-content-center">
                 {listElement(mem[7])}
                 {listElement(mem[8])}
                 {listElement(mem[9])}
                 {listElement(mem[10])}
                 {listElement(mem[11])}
+                
+                
+            </div>
+            <div className= "card-deck  mt-2 justify-content-center">
                 {listElement(mem[12])}
-
- 
             </div>
-            <div className="h1" style={{'textAlign':'center','marginTop':'1.5%'}}>Events</div>
-            <div className= "card-deck mt-2 justify-content-center">
-                                       
-            </div>
-            <div className="h1" style={{'textAlign':'center','marginTop':'1.5%'}}>Social Media and Graphics Design</div>
-            <div className= "card-deck mt-2 justify-content-center">
-                            </div>
-            <div className="h1" style={{'textAlign':'center','marginTop':'1.5%'}}>Advisors</div>
-            <div className= "card-deck mt-2 justify-content-center">
-                            </div>
         </div>
     );
 }

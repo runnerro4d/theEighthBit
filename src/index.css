@@ -17,8 +17,16 @@ body{
     margin-right: 15%;
 }
 
+.slide{
+    height: 20%;
+}
+
 #main-stuff{
     margin: 0%;
+}
+
+.img-fluid{
+    width: 10%;
 }
 
 .footer{
@@ -150,9 +158,6 @@ h4,h3{
     transform: scale(1.01);
 }
 
-.slide{
-    margin: 10px;
-}
 
 img{
     border-radius: 10px;

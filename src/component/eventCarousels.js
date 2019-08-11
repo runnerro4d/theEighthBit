@@ -19,9 +19,9 @@ export default class SimpleSlider extends React.Component {
     cssEase: "linear"
   };
   return (
-        <div style={{"marginTop":"5em","width":"65em", "marginLeft":"12em"}}>
+        <div className= "container-fluid"style={{"marginTop":"5em","width":"93%","marginLeft":"5%"}}>
             <h2 style={{"textAlign":"center"}}>Events</h2>
-            <Slider {...settings} >
+            <Slider {...settings} className="slide justify-content-center">
                 <div>
                     <img className="img-fluid slider-item" src={eightbitlogo} alt=""/>
                 

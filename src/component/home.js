@@ -8,7 +8,7 @@ const pageText = ["Empower IT students with capabilities and connections that ca
 "We achieve them through our 3C’s\nC - Cognition\nC - Capabilities\nC - Connections",
 "We aim to provide: \nA platform for Industry and students to interact \nDevelop job relevant skills outside academic curriculum and \nmake sure that every event you attend helps you check something off your List-of-things-to-getting-a-job."];
 
-class WhyWereHere extends React.Component{
+class Home extends React.Component{
     render() {
         
         return(
@@ -72,4 +72,4 @@ class Para extends React.Component{
     }
 }
 
-export default WhyWereHere;
+export default Home;

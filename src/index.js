@@ -8,25 +8,34 @@ import {BrowserRouter as Router, Route, Link} from "react-router-dom";
 import './index.css';
 import eightbitlogo from './images/eightbitlogo.jpg'
 import Wallpaper from './images/wallpaper1.jpg'
-import Events from './component/events'
-import WhyWereHere from './component/whyWereHere'
-import AboutUs from './component/aboutus'
+import Events from './component/eventCarousels'
+import Home from './component/home'
+import Committee from './component/committee'
+import "../node_modules/slick-carousel/slick/slick.css"; 
+import "../node_modules/slick-carousel/slick/slick-theme.css";
+
+
 
 class Header extends React.Component{
     render(){
         return(
             <Navbar collapseOnSelect expand="lg"  variant="dark" id = "nav" className="navbar fixed-top">
                 <div>
-                    <a href="#home"><img id= "navbar-image" src={this.props.image} alt="" height="70" width="70" /></a>
-                    
+                    <Link to="/home">
+                        <img id= "navbar-image" src={this.props.image} alt="" height="70" width="70" />
+                    </Link>
                 </div>
-                <Navbar.Brand href="#home">The Eighth Bit</Navbar.Brand>
+                <Navbar.Brand>
+                    <Link className="text-white" to="/home">The Eighth Bit</Link>
+                </Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="mr-auto w-100 justify-content-end">
+                        <Link className="text-white nav-item" to="/home">Home</Link>
                         <Link className="text-white nav-item" to="/events">Events</Link>
-                        <Link className="text-white nav-item" to="/why-were-here">Why We're Here</Link>
-                        <Link className="text-white nav-item" to="/about-us">About Us</Link>  
+                        <Link className="text-white nav-item" to="/about-us">About Us</Link>
+
+                        <Link className="text-white nav-item" to="/committee">Committee</Link>  
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>
@@ -55,12 +64,13 @@ class Page extends React.Component{
             <Router id = "main-stuff" className="container-fluid">
                 <div>
                     <Header image = {eightbitlogo}></Header>
-                    <img id = "wallpaper" src={Wallpaper} alt="something"/>
+                    
                 </div>
-                <Route exact path="/" component={Events}/>
+                <Route exact path="/" component={Home}/>
+                <Route path="/home" component={Home}/>
                 <Route path="/events" component={Events}/>
-                <Route path="/why-were-here" component={WhyWereHere}/>
-                <Route path="/about-us" component={AboutUs}/>
+                {/* <Route path="/about-us" component={AboutUs}/> */}
+                <Route path="/committee" component={Committee}/>
                 {makeFooter()}
             </Router>
         );

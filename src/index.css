@@ -1,3 +1,7 @@
+body{
+    width: 100%;
+}
+
 
 .nav-item{
     align-self: horizontal;
@@ -160,30 +164,18 @@ img{
     
 }
 
-.caros > section{
-    margin: 30px 0;
-    margin-left: 0;
-    width:97%;    
+
+.slick-slide img{
+    width: 15em;
+    height: 20em;
     position: relative;
     display: grid;
-    grid-template-columns: repeat(4,auto);       
+    grid-template-columns: repeat(2,auto);
 }
 
-.caros > section >.item>img{
-    width: 300px;
-    height: 350px;
-    margin-right: 10px;
-    margin-left: 10px;
-}
 
-.caros > section >.item{
-    transition: 250ms;
-}
-
-.caros > section >.item:hover{
-    margin-right: 40px;
-    margin-left: 40px;
-    transform: scale(1.2);
+.slider-item:hover{
+    transform: scale(1.02);
 }
 
 #wallpaper{
@@ -192,13 +184,21 @@ img{
 }
 
 .card-img-top{
-    width: 100%;
-    height: 100%;
+    width: 13em;
+    height: 13em;
     border-radius: 150px;
-    
+
 }
 
 .card{
+    width: 15rem;
     margin-right:0px; 
 }
 
+.card-title,.card-text{
+    font-size: 0.9em;
+}
+
+.slick-slider,.slick-track{
+    width:inherit;
+}
